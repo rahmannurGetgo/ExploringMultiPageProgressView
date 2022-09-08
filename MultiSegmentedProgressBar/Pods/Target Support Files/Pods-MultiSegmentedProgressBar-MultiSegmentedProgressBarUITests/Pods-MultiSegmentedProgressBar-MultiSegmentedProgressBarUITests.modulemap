@@ -1,0 +1,6 @@
+framework module Pods_MultiSegmentedProgressBar_MultiSegmentedProgressBarUITests {
+  umbrella header "Pods-MultiSegmentedProgressBar-MultiSegmentedProgressBarUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

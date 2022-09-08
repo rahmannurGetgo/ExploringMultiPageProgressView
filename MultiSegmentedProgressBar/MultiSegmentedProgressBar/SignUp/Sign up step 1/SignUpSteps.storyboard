@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up Step1VC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="signUpStep1" id="Y6W-OH-hqX" customClass="SignUpStep1VC" customModule="MultiSegmentedProgressBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testing first step sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61Q-Xo-PCP">
+                                <rect key="frame" x="113.5" y="437.5" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikz-Tn-3fV">
+                                <rect key="frame" x="16" y="799" width="382" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="61Q-Xo-PCP" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="BcF-aN-VhG"/>
+                            <constraint firstItem="ikz-Tn-3fV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Nge-Tt-HfO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ikz-Tn-3fV" secondAttribute="trailing" constant="16" id="Ua4-cy-Ojm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ikz-Tn-3fV" secondAttribute="bottom" constant="32" id="gXY-cR-9SK"/>
+                            <constraint firstItem="61Q-Xo-PCP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="jO9-PH-o8m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextBtn" destination="ikz-Tn-3fV" id="y5h-Kp-NdH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="91"/>
+        </scene>
+        <!--Sign Up Step2VC-->
+        <scene sceneID="rSu-oH-rLh">
+            <objects>
+                <viewController storyboardIdentifier="signUpStep2" id="G1w-cX-1Y2" customClass="SignUpStep2VC" customModule="MultiSegmentedProgressBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UKk-OS-rxD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testing second step sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKw-F1-Npg">
+                                <rect key="frame" x="100.5" y="437.5" width="213" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSF-mL-B5I">
+                                <rect key="frame" x="16" y="799" width="382" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VPJ-lO-luO"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="VPJ-lO-luO" firstAttribute="bottom" secondItem="tSF-mL-B5I" secondAttribute="bottom" constant="32" id="Gyd-le-DHi"/>
+                            <constraint firstItem="EKw-F1-Npg" firstAttribute="centerY" secondItem="UKk-OS-rxD" secondAttribute="centerY" id="kh5-Kl-8hR"/>
+                            <constraint firstItem="VPJ-lO-luO" firstAttribute="trailing" secondItem="tSF-mL-B5I" secondAttribute="trailing" constant="16" id="n0N-py-oBd"/>
+                            <constraint firstItem="tSF-mL-B5I" firstAttribute="leading" secondItem="VPJ-lO-luO" secondAttribute="leading" constant="16" id="xlh-dN-HCf"/>
+                            <constraint firstItem="EKw-F1-Npg" firstAttribute="centerX" secondItem="UKk-OS-rxD" secondAttribute="centerX" id="zRe-5Z-QRm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextBtn" destination="tSF-mL-B5I" id="YBe-Mn-RUp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cnS-tY-crH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923" y="90"/>
+        </scene>
+        <!--Sign Up Step3VC-->
+        <scene sceneID="am4-SN-y9U">
+            <objects>
+                <viewController storyboardIdentifier="signUpStep3" id="XmM-Xa-Fjj" customClass="SignUpStep3VC" customModule="MultiSegmentedProgressBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q93-eG-Rqh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testing third step sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSF-qt-vHh">
+                                <rect key="frame" x="111" y="437.5" width="192" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16y-6u-WEs">
+                                <rect key="frame" x="16" y="799" width="382" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Finish"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2bL-77-0GB"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="16y-6u-WEs" firstAttribute="leading" secondItem="2bL-77-0GB" secondAttribute="leading" constant="16" id="1SW-IW-hfq"/>
+                            <constraint firstItem="dSF-qt-vHh" firstAttribute="centerX" secondItem="Q93-eG-Rqh" secondAttribute="centerX" id="9Sr-2Z-d19"/>
+                            <constraint firstItem="2bL-77-0GB" firstAttribute="bottom" secondItem="16y-6u-WEs" secondAttribute="bottom" constant="32" id="ZSF-Ag-n5D"/>
+                            <constraint firstItem="2bL-77-0GB" firstAttribute="trailing" secondItem="16y-6u-WEs" secondAttribute="trailing" constant="16" id="gCS-Hm-u8i"/>
+                            <constraint firstItem="dSF-qt-vHh" firstAttribute="centerY" secondItem="Q93-eG-Rqh" secondAttribute="centerY" id="z7J-6G-nvY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3y-D4-5dI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1697" y="90"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

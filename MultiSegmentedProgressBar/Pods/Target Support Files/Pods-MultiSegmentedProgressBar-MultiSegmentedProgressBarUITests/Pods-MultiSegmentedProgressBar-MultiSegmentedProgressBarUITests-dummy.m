@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_MultiSegmentedProgressBar_MultiSegmentedProgressBarUITests : NSObject
+@end
+@implementation PodsDummy_Pods_MultiSegmentedProgressBar_MultiSegmentedProgressBarUITests
+@end

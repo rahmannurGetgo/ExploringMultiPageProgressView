@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="firstSignUp" id="Y6W-OH-hqX" customClass="SignUpViewController" customModule="MultiSegmentedProgressBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qiN-zQ-9hF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="24"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvR-Hi-W5h" customClass="MultiProgressView" customModule="MultiProgressView">
+                                        <rect key="frame" x="0.0" y="0.0" width="134.5" height="24"/>
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackBackgroundColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXi-a9-b9z" customClass="MultiProgressView" customModule="MultiProgressView">
+                                        <rect key="frame" x="139.5" y="0.0" width="135" height="24"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackBackgroundColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zPv-fV-0Jx" customClass="MultiProgressView" customModule="MultiProgressView">
+                                        <rect key="frame" x="279.5" y="0.0" width="134.5" height="24"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackBackgroundColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="qMU-S2-JMi"/>
+                                </constraints>
+                            </stackView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pLx-G6-c2K">
+                                <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                                <connections>
+                                    <segue destination="dBr-hv-Me6" kind="embed" id="KID-FF-tIN"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="pLx-G6-c2K" secondAttribute="bottom" id="9Rz-xk-Kdf"/>
+                            <constraint firstItem="qiN-zQ-9hF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Hfv-0v-H5V"/>
+                            <constraint firstItem="pLx-G6-c2K" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ql0-x8-ZIx"/>
+                            <constraint firstItem="qiN-zQ-9hF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="RMP-AF-aeJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pLx-G6-c2K" secondAttribute="trailing" id="XJB-Hk-dM3"/>
+                            <constraint firstItem="qiN-zQ-9hF" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="b4n-Na-jd4"/>
+                            <constraint firstItem="pLx-G6-c2K" firstAttribute="top" secondItem="qiN-zQ-9hF" secondAttribute="bottom" constant="16" id="kdV-cp-Ecn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView1" destination="qvR-Hi-W5h" id="lwI-6V-2O7"/>
+                        <outlet property="progressView2" destination="ZXi-a9-b9z" id="96x-Wh-ewV"/>
+                        <outlet property="progressView3" destination="zPv-fV-0Jx" id="epf-pg-fos"/>
+                        <outlet property="signUpContainerView" destination="pLx-G6-c2K" id="W8J-U6-CnH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zp1-5R-rwK">
+            <objects>
+                <viewController id="dBr-hv-Me6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a8D-1u-lfa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="778"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3E-pS-Sza" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1154" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
